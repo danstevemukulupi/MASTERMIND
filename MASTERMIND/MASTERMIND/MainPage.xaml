@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MASTERMIND.MainPage">
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions ="Center">
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="40">
+            
+            <Label Text="MASTERMIND" HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+            <Button BackgroundColor="LightGray" Text="Play New Game" Clicked="Button_Clicked" CornerRadius="20" WidthRequest="100" Margin="0" Padding="0" TextColor="Black"/>
+        </StackLayout>
+
+        <Frame BackgroundColor="LightGray" CornerRadius="10" Padding="4" HorizontalOptions="FillAndExpand">
+            <StackLayout x:Name="RowsContainer" Orientation="Vertical" HorizontalOptions="Center"/>
+        </Frame>
+
+        <Frame BackgroundColor="LightGray" CornerRadius="10" Padding="4" HorizontalOptions="FillAndExpand">
+            <StackLayout x:Name="MindsContainer" Orientation="Horizontal" HorizontalOptions="Center"/>
+        </Frame>
+        <Button  x:Name="BtnResult" Text="Show Result"  TextColor="Red" BackgroundColor="LightGray" IsEnabled="False" Clicked= "Button_Clicked_3" CornerRadius="10" Padding="4" FontSize="Medium" HorizontalOptions="FillAndExpand"/>
+
+
+    </StackLayout>
+</ContentPage>
